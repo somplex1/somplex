@@ -1,0 +1,154 @@
+
+
+
+
+
+    
+
+body{
+    background-color: #1D2026;
+    padding: 30px;
+    max-width: 90%;
+    max-height: 90%;
+    
+
+   
+    
+}
+
+.container{
+    box-shadow: 0px 0px 10px 0px white;
+}
+
+
+#buttonEnglish{
+    text-align: center;
+    color: rgb(140, 140, 255);
+    font-weight: bold;
+    border-radius: 50px;
+    border-width: 0px;
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.674);
+    height: fit-content;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+#nav{
+    
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    justify-content: center;
+   
+    height: 50px;
+    border-style: solid;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-top-width: 0px;
+    border-bottom-width: 3px;
+    
+    padding-right: 0px;
+    
+
+        background: linear-gradient(to right, rgb(140, 140, 255), rgb(84, 84, 146));
+    
+    
+
+    
+}
+
+ul{
+    justify-content:start;
+}
+li{
+    margin: 10px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+   
+}
+
+a{
+    text-decoration: none;
+    
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.nav-item{
+    display:flex;
+
+}
+#firstImageBG{
+    margin-top: 50px;
+    text-align: center;
+    
+}
+#FirstText{
+    
+    text-align: center;
+    color: aliceblue;
+}
+
+.firstImage{
+    
+    align-self: center;
+   
+   border-radius: 50px;
+   width: 100vw;
+   height: 100vw;
+}
+
+#vid{
+    padding: 0px;
+}
+#itemsDiv{
+    padding: 25px;
+}
+
+#items{
+    
+   
+    
+    
+}
+
+#images{
+    max-width: 100%;
+    border-radius: 5px;
+    
+    
+}
+
+h5{
+    
+    font-size: small;
+    color: azure;
+    
+}
+
+#Somplex{
+    max-width: 30px;
+}
+   
+
+#contact{
+    
+
+    display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa {
+        margin-right: 20;
+        margin-left: 20;
+        max-width: 50px;
+}
+
+#contactINFO{
+    margin-top: 20px;
+    color: aliceblue;
+}
+
+
+    
+
