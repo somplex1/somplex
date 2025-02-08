@@ -72,10 +72,11 @@
             margin: 0;
             padding: 0;
             display: flex;
+            gap: 20px; /* Add spacing between nav items */
         }
 
         nav ul li {
-            margin-left: 20px;
+            margin-left: 0; /* Remove left margin */
         }
 
         nav ul li a {
@@ -219,20 +220,19 @@
             }
 
             header {
-                flex-direction: column;
-                text-align: center;
                 padding: 10px 5%;
-            }
-
-            nav ul {
-                margin-top: 10px;
-                flex-direction: column; /* Stack nav items vertically on mobile */
+                flex-direction: row; /* Keep header items horizontal */
                 align-items: center;
             }
 
+            nav ul {
+                margin-top: 0; /* Remove top margin */
+                flex-direction: row; /* Keep nav items horizontal */
+                gap: 10px; /* Reduce gap for smaller screens */
+            }
+
             nav ul li {
-                margin-left: 0;
-                margin-bottom: 10px; /* Add spacing between stacked nav items */
+                margin-bottom: 0; /* Remove bottom margin */
             }
 
             .hero {
