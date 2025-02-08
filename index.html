@@ -1,337 +1,329 @@
-<html>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+<!DOCTYPE html>
+<html lang="en">
 <head>
-        <title>Somplex - Eggman</title>
-
-         <!--Bootstrap 5-->
-     <link rel="stylesheet" href="bootstrap/bootstrap-5.3.2-dist/css/bootstrap.min.css">
-
-      <!--external css-->
-      <link rel="stylesheet" href="./css/style.css">
-       
-
-
-
-      <script>
-         function myOneTimeFunction() {
-          englishText.style.display = 'block';
-                kurdishText.style.display = 'none';
-          document.getElementById("vid").src = "videos/km_20240428_1080p_30f_20240430_184711.mp4";
-          
-            
-            // Add any other code you want to execute here
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somplex - Revolutionizing Gaming, Healthcare & Education</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
 
-        // Attach the function to the window.onload event
-        window.onload = myOneTimeFunction;
-       
-      </script>
+        .container {
+            max-width: 1200px;
+            width: 90%;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            margin: 20px;
+        }
 
-      <!-- Hotjar Tracking Code for Site 4937042 (name missing) -->
-<script>
-  (function(h,o,t,j,a,r){
-      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-      h._hjSettings={hjid:4937042,hjsv:6};
-      a=o.getElementsByTagName('head')[0];
-      r=o.createElement('script');r.async=1;
-      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-      a.appendChild(r);
-  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+        /* Background Image */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://i.ibb.co/JRmpNT2R/poster.png') no-repeat center center/cover;
+            filter: blur(10px);
+            z-index: -1;
+        }
+
+        /* Header Styles */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+        }
+
+        .logo h1 {
+            font-size: clamp(20px, 5vw, 24px); /* Responsive font size */
+            font-weight: 600;
+            color: #ffffff;
+            letter-spacing: -1px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: 400;
+            font-size: clamp(12px, 3vw, 14px); /* Responsive font size */
+            transition: opacity 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            opacity: 0.7;
+        }
+
+        /* Hero Section Styles */
+        .hero {
+            text-align: center;
+            padding: 10% 5%;
+        }
+
+        .hero h2 {
+            font-size: clamp(32px, 8vw, 48px); /* Responsive font size */
+            font-weight: 600;
+            margin-bottom: 20px;
+            letter-spacing: -2px;
+        }
+
+        .hero p {
+            font-size: clamp(16px, 4vw, 18px); /* Responsive font size */
+            font-weight: 300;
+            margin-bottom: 40px;
+            color: #cccccc;
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+
+        .highlight {
+            color: #ff6f61;
+            font-weight: 600;
+        }
+
+        .cta-text {
+            font-size: clamp(12px, 3vw, 14px); /* Responsive font size */
+            color: #999999;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* About and Contact Sections */
+        .about, .contact {
+            padding: 80px 5%;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            margin: 40px 5%;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .about h2, .contact h2 {
+            font-size: clamp(28px, 6vw, 36px);
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .about p, .contact p {
+            font-size: clamp(14px, 3.5vw, 16px);
+            color: #cccccc;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .contact a {
+            color: #ff6f61;
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .contact a:hover {
+            opacity: 0.8;
+        }
+
+        /* Social Media Buttons */
+        .social-media {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .social-media a {
+            color: #ffffff;
+            font-size: 24px;
+            transition: opacity 0.3s ease;
+        }
+
+        .social-media a:hover {
+            opacity: 0.7;
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 20px 5%;
+            font-size: clamp(12px, 3vw, 14px); /* Responsive font size */
+            color: #666666;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 40px;
+        }
+
+        /* Responsive Margins and Padding */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                margin: 10px;
+            }
+
+            header {
+                padding: 15px 5%;
+            }
+
+            .hero {
+                padding: 15% 5%;
+            }
+
+            .about, .contact {
+                margin: 20px 5%;
+                padding: 60px 5%;
+            }
+
+            footer {
+                padding: 15px 5%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                width: 100%;
+                margin: 5px;
+                border-radius: 10px;
+            }
+
+            header {
+                flex-direction: column;
+                text-align: center;
+                padding: 10px 5%;
+            }
+
+            nav ul {
+                margin-top: 10px;
+            }
+
+            nav ul li {
+                margin-left: 10px;
+            }
+
+            .hero {
+                padding: 20% 5%;
+            }
+
+            .hero h2 {
+                font-size: 28px;
+            }
+
+            .hero p {
+                font-size: 14px;
+            }
+
+            .about, .contact {
+                margin: 10px 5%;
+                padding: 40px 5%;
+            }
+
+            footer {
+                padding: 10px 5%;
+            }
+        }
+    </style>
 </head>
-<style>
-  @font-face {
-      font-family: myFirstFont;
-      src:local("Images/Fonty.ttf");
-  }
-  
-  .harlow{
-      font-family: myFirstFont;
-  }
-  </style>
-
 <body>
-    
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1>Somplex</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="hero">
+                <h2>Transforming How We <span class="highlight">Interact with the Digital World</span></h2>
+                <p>
+                    At Somplex, we’re redefining the way people engage with digital screens. From revolutionizing healthcare 
+                    and education to creating immersive gaming experiences, we’re building a future where technology empowers 
+                    everyone to live, learn, and thrive in a connected world.
+                </p>
+                <div class="cta-text">Coming Soon</div>
+            </section>
 
-    
-<!--Var-->
+            <!-- About Section -->
+            <section id="about" class="about">
+                <h2>About Us</h2>
+                <p>
+                    Somplex is a pioneering force in the gaming industry, known for creating immersive, innovative, and unforgettable 
+                    gaming experiences. Our games are designed to push the boundaries of storytelling, graphics, and interactivity, 
+                    offering players a chance to explore new worlds and live extraordinary adventures.
+                </p>
+                <p>
+                    But we don’t stop at gaming. We’re also revolutionizing how digital screens are used in healthcare and education. 
+                    By leveraging cutting-edge technology, we’re creating solutions that improve patient outcomes, enhance learning 
+                    experiences, and make digital interactions more intuitive and impactful.
+                </p>
+                <p>
+                    At Somplex, we believe that digital screens are not just tools – they’re gateways to better health, deeper learning, 
+                    and unforgettable experiences. Join us as we redefine the future of digital interaction.
+                </p>
+            </section>
 
-<nav id="nav">
-    <ul class="nav-item">
-        <li class="nav nav-justified"><img id="Somplex" src="Images/logo-removebg-preview.png" alt=""></li>
-        <li class="nav nav-justified">Somplex</li>
-
-      <li class="nav nav-justified"><a href="#about">About</a></li>  
-           
-    </ul>
-  </nav>
-
-  
-  
-
-  <!--First show-->
-        
-      
-         <a href="indexKU.html"><button id="buttonEnglish" value="en" onclick="buttonEnglish">Kurdish</button>
-                  </a>
-                  <h1 style=" text-align: center; color: white;">Trailer</h1>
-        <h1 id="firstImageBG">
-            
-           <iframe id="vid" class="firstImage" style="width: 70vw; height: 35vw; background-color: black;" width="560" height="315" src="https://www.youtube.com/embed/ss8xArlWp8Q?si=HAPTcnbR1iBglEKY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-        
-          </h1>
-          
-          <h1 id="firstImageBG">
-              <img src="Images/20240409_190842.png" style="max-width: 25%;">
-          </h1>
-
-    <h1 style="text-align: center;">
-            <a href="https://store.steampowered.com/app/2973160/Eggman/"><img style="max-width: 30%;" src="Images/SteamPadding.png" alt=""></a>
-          </h1>  
-          
-        
-  
- <section id="screenshots">
-  <h1 style="text-align: center; color: white;">Screenshots</h1>
-  
-  <div class="row row-cols-1 row-cols-md-2 g-4 py-5" id="itemsDiv">
-    <!--1-->
-    <h1 id="firstImageBG">
-      <div id="items">
-        <img id="images" src="Images/1.jpg" alt="">
-        <br>
-        <h5 style="color: white;">Have you ever seen a Tea Town?</h5>
-        
+            <!-- Contact Section -->
+            <section id="contact" class="contact">
+                <h2>Contact Us</h2>
+                <p>
+                    Interested in how we’re changing the digital landscape? Whether you’re a gamer, healthcare provider, educator, 
+                    or tech enthusiast, we’d love to connect. Reach out to us at 
+                    <a href="mailto:somplexofficial@gmail.com">somplexofficial@gmail.com</a> 
+                    or follow us on social media to stay updated on our journey.
+                </p>
+                <!-- Social Media Buttons -->
+                <div class="social-media">
+                    <a href="https://www.youtube.com/channel/UCuefewhovPPTDjkhFLdhpSA" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.facebook.com/p/Somplex-61558816947832/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://x.com/SomplexOfficial" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2023 Somplex. All rights reserved.</p>
+        </footer>
     </div>
 
-</h1>
-
-<!--1-->
-<h1 id="firstImageBG">
-  <div id="items">
-    <img id="images" src="Images/2.jpg" alt="">
-    <h5 style="color: white;">You can climb walls to survive</h5>
-</div>
-
-</h1>
-
-<!--1-->
-<h1 id="firstImageBG">
-  <div id="items">
-    <img id="images" src="Images/3.jpg" alt="">
-    <h5 style="color: white;">Complete puzzles to escape</h5>
-    
-</div>
-
-</h1>
-
-<!--1-->
-<h1 id="firstImageBG">
-  <div id="items">
-    <img id="images" src="Images/4.jpg" alt="">
-    <h5 style="color: white;">Explore the colorful world!</h5>
-</div>
-
-</h1>
-
-<!--1-->
-<h1 id="firstImageBG">
-  <div id="items">
-    <img id="images" src="Images/5.jpg" alt="">
-    <h5 style="color: white;">Help other to make them happy!</h5>
-</div>
-
-</h1>
-
-<!--1-->
-<h1 id="firstImageBG">
-  <div id="items">
-    <img id="images" src="Images/6.jpg" alt="">
-    <h5 style="color: white;">The world is so big to eggs!!</h5>
-</div>
-
-</h1>
-
-
-  </div>
-</section>
-
-<section id="about" style="background-color: #171717; margin: 20px; border-radius: 10px; box-shadow: 0px 0px 10px 0px  rgba(255, 255, 255, 0.096); padding: 20px;">
-    
-
-    
-    <h2 style="color: white; text-align: left;">About the game</h2>
-
-    
-
-    <p style="color: white;  text-align: left;" >
-     Game name: Eggman
-      <br>
-      Genre: Adventure - single player - Emotional
-      <br>
-      <br>
-      At this moment, it only avalible on Pc, next will be on Consoles and mobile
-      </p>
-
-      <h5 style="color: white; margin-bottom: 150px; text-align: left; margin-top: 20px;" >
-        Eggy's mother, died,  Eggy decided to put her life in danger in order to find his family.
-        </h5>
-
-        <h3 style="text-align: left; color: white; padding: 10px;">- Publisher: <b>Somplex</b>
-         
-         <br>
-         
-          <br>
-
-           - Developer: <b>Somplex</b>
-          <br>
-          <b>Engine: Unity</b>
-
-           <br>
-            <br>
-           
-            <img style="max-width: 30%; margin-right: 70px; margin-bottom: 20px" src="Images/a.png" alt="" >
-            <img style="max-width: 30%; margin-right: 70px; margin-bottom: 20px" src="Images/b.png" alt="">
-            
-           
-         
-          
-
-        <h1 style="color: white; text-align: center;">Common Questions</h1>
-
-        <div class="row row-cols-1 row-cols-md-1 g-4 py-5" id="itemsDiv">
-          <h5 style="color: white; border-radius: 25px; box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.189); padding: 10px;" id="firstImageBG">It needs powerful computer?<br>
-            <br>
-             No, itself made by a low end laptop
-            
-            </h5>
-
-            <!--2-->
-          </h5>
-
-          
-       
-          
-            <h5 style="color: white; border-radius: 25px; box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.189); padding: 10px;" id="firstImageBG">Is there only English language?<br>
-              <br>
-              No, English and Kurdish
-              
-              </h5>
-
-              <h5 style="color: white; border-radius: 25px; box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.189); padding: 10px;" id="firstImageBG">Age limit?<br>
-                <br>
-                There is no limit, because it is far from all the immoral values, inappropriate scenes and a family game.
-                
-                </h5>
-
-                <h5 style="color: white; border-radius: 25px; box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.189); padding: 10px;" id="firstImageBG">can i play it with only keyboard and mouse?<br>
-                  <br>
-      No, it supports Controllers and keyboard&mouse
-                  
-                  </h5>
-
-                  <h5 style="color: white; border-radius: 25px; box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.189); padding: 10px;" id="firstImageBG">is this game only for pc?<br>
-                    <br>
-                        The answer is No, but currently we need your support, when the game gets success on pc, we'll publish the game on (Playstation, Xbox, Nentendo, Mobile)
-                    
-                    </h5>
-
-        </div>
-
-        
-    
-
-    
-
-  </section >
-  
-  <h1 style="text-align: center;">
-    <a  href="https://drive.google.com/drive/folders/1paf8cyqypg5pNMitOacOhVmxLdEmAXgb?usp=drive_link"><img style="max-width: 20%;" src="Images/20240503_175053.png" alt=""></a>
-
-  </h1>
-
-    <div class="row row-cols-1 row-cols-md-4 g- py-5" id="itemsDiv" style="display: flex;
-          justify-content: center;">
-          
-            <img style="max-width: 30%; margin-right: 70px; margin-bottom: 20px;" src="Images/d.png" alt="">
-            <img style="max-width: 30%; margin-right: 70px; margin-bottom: 20px;" src="Images/c.png" alt="">
-            <br>
-            <img style="max-width: 30%; margin-right: 70px;" src="Images/e.png" alt="">
-         
-          </div>
-
-   
-  <section  style="background-color: #171717; margin: 20px; border-radius: 10px; box-shadow: 0px 0px 10px 0px  rgba(255, 255, 255, 0.096); padding: 10px;">
-    
-    
-      <br>
-      <br>
-      <br>
-      <h3 style="color: white;">The game made by: Aland hemn</h3><br>
-        
-        
-      
-
-      <h4 style="color: white; text-align: left; padding: 10px; "> Who is Aland hemn? </h4>
-
-      <p style="color: white;  padding: 10px; " >
-      My name is Aland, currently i'm 16, And I'm an 11th grade student, i live in chwarta(sulaymaniyah - kurdistan), i love to make video games, and applications, also i can do simple designes, video editing.... <br>
-      also i have an Android application called "Kurdingo". i made it 2 years ago.. i hope you enjoy my works!
-    <br>
-    <br>
-      
-      </p>
-  
-      <div style="display: flex;">
-        
-        <a  href="https://www.facebook.com/alandnotFound"  > 
-         
-          <img  class="fa" src="Images/pic.png" alt="Facebook"> </a>
-        <h4 style="color: white; margin-top: 15px;">Aland Hemn</h4>
-
-        
-  </section>
-
- 
-    
-    
-  <section id="about" style="background-color: #171717; margin: 20px; border-radius: 10px; box-shadow: 0px 0px 10px 0px  rgba(255, 255, 255, 0.096); padding: 10px;">
-    
-    <h2 style="color: white; text-align: right; margin: 10px;">About us</h2>
-n 
-    <p style="color: white; margin-bottom: 150px; padding: 10px; " >
-      Somplax was established in 2023 and our main task is to create electronic games, and our main goal is to improve the level of electronic games in Kurdistan<br></p>
-
-    
-    
-      </div>
-      
-  </section>
-
-
-
-
-
-
-<section id="contact">
-  <div style="background-color: #171717; background-color: #171717; box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.438);
-  border-radius: 10px;
-  padding: 10px;">
-    
-    <a href="https://www.facebook.com/profile.php?id=61558816947832" ><img class="fa" src="Images/facebook.png" alt=""></a>
-    <a href="https://twitter.com/SomplexOfficial" ><img class="fa" src="Images/x.png" alt=""></a>
-    <a href="https://www.youtube.com/channel/UCuefewhovPPTDjkhFLdhpSA" ><img class="fa" src="Images/yat.png" alt=""></a>
-    
-  </div>
-  
-  <h2 id="contactINFO"  style="text-align: center;">  Contact us</h2>
-  <h5 id="contactINFO" style="text-align: center;">Email: somplexofficial@gmail.com</h2>
-  
-</section>
-    
+    <!-- Smooth Scroll Script -->
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault(); // Prevent default anchor behavior
+                const targetId = this.getAttribute('href').substring(1); // Get the target section ID
+                const targetSection = document.getElementById(targetId); // Find the target section
+                targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' }); // Smooth scroll to the section
+            });
+        });
+    </script>
 </body>
-
-
-
 </html>
