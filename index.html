@@ -19,6 +19,7 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
         }
 
         .container {
@@ -52,6 +53,11 @@
             justify-content: space-between;
             align-items: center;
             padding: 20px 5%;
+            background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for better readability */
+            backdrop-filter: blur(10px); /* Blur effect for header */
+            position: sticky;
+            top: 0;
+            z-index: 1000; /* Ensure header stays on top */
         }
 
         .logo h1 {
@@ -220,10 +226,13 @@
 
             nav ul {
                 margin-top: 10px;
+                flex-direction: column; /* Stack nav items vertically on mobile */
+                align-items: center;
             }
 
             nav ul li {
-                margin-left: 10px;
+                margin-left: 0;
+                margin-bottom: 10px; /* Add spacing between stacked nav items */
             }
 
             .hero {
@@ -277,9 +286,14 @@
             <section id="about" class="about">
                 <h2>About Us</h2>
                 <p>
-                    Somplex is a pioneering force in the gaming industry, known for creating immersive, innovative, and unforgettable 
+                    Somplex is a trailblazer in the gaming industry, known for crafting immersive, innovative, and unforgettable 
                     gaming experiences. Our games are designed to push the boundaries of storytelling, graphics, and interactivity, 
                     offering players a chance to explore new worlds and live extraordinary adventures.
+                </p>
+                <p>
+                    We specialize in creating games that are not only visually stunning but also deeply engaging. From action-packed 
+                    adventures to thought-provoking narratives, our games are built to captivate and inspire. We believe that gaming 
+                    is more than just entertainment – it’s a way to connect, learn, and grow.
                 </p>
                 <p>
                     But we don’t stop at gaming. We’re also revolutionizing how digital screens are used in healthcare and education. 
